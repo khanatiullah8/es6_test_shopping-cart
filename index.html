@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en"> 
+<head>
+  <meta charset="utf-8">
+  <title>Shopping Cart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" />
+  <!--font-awesome link for icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+</head>
+<body>
+  <!--container start-->
+  <div class="container">
+    <!--main section start-->
+    <main>
+      <!-- shopping-cart section start -->
+      <section class="shopping-cart">
+        <div class="wrapper">
+          <h2 class="section-heading">enter items and quantity:</h2>
+          <div class="form-container">
+            <form action="#FIXME" method="get" name="form" class="cart-form">
+              <div class="input-group">
+                <label>item:</label>
+                <div>
+                  <input type="text" name="search" placeholder="enter name of product" autocomplete="off">
+                  <span class="input-error">please fill product name</span>
+                </div>
+              </div>
+              <div class="input-group">
+                <label>quantity:</label>
+                <div>
+                  <input type="text" name="quantity" placeholder="enter quantity of product" autocomplete="off">
+                  <span class="input-error">please fill product quantity</span>
+                </div>
+              </div>
+              <div class="input-control">
+                <input type="button" class="save-button" value="save">
+                <input type="button" class="modify-button" value="modify">
+              </div>
+            </form>
+            <ul class="select-products"></ul>
+          </div>
+          <div class="shopping-lists">
+            <h3 class="lists-heading">shopping list:</h3>
+            <ul class="cart-title">
+              <li>name</li>
+              <li>product</li>
+              <li>quantity</li>
+              <li>value</li>
+              <li>modify</li>
+              <li>remove</li>
+            </ul>
+            <div class="cart-products-all"></div>
+          </div>
+          <div class="clear-shopping">
+            <span class="clear-shopping-button">clear</span>
+            <span>Remove all items</span>
+          </div>
+        </div>
+      </section>
+      <!-- shopping-cart section end -->
+    </main>
+    <!--main section end-->
+  </div>
+  <!--container end-->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
